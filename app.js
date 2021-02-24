@@ -5,17 +5,16 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const session = require('express-session')
 const MongoDBStore = require('connect-mongodb-session')(session);
-const MONGO_URI = `mongodb+srv://lekhapora:${lekhapora}@cluster0.nblcl.mongodb.net/${lekhapora}?retryWrites=true&w=majority`
+const MONGO_URI = `mongodb+srv://lekhapora:lekhapora@cluster0.nblcl.mongodb.net/lekhapora?retryWrites=true&w=majority`
 
 const setRoutes = require('./routers/controlRouter')
 
 // 
 
-const app = express()
 
 const store = new MongoDBStore({
     uri: MONGO_URI,
-    collection: 'sessions'
+    collection: 'users'
   });
 
 const middleware = [
