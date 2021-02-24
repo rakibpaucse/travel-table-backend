@@ -6,24 +6,6 @@ exports.signupGetController = (req , res , next ) => {
 
 exports.signupPostController = async(req , res , next ) => {
 
-    let studentid = '171054042' 
-    let password = 'test123'   
-
-
-    try {
-
-        const hashedPassword = password
-        const user = new User({ studentid , password})
-
-        let createdUser = await user.save()
-        console.log('User created Succesfully' , createdUser);     
-
-    }
-     catch (error) {
-        console.log(error)
-        next(error)
-    }
-
 }
 
 exports.loginGetController = (req , res , next ) => {
