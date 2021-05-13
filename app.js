@@ -1,4 +1,5 @@
 const express = require('express')
+var cors = require('cors');
 const PORT = 8080;
 const app = express()
 const morgan = require('morgan')
@@ -30,8 +31,8 @@ const middleware = [
     }),
 ]
 
-app.use(middleware)
-
+app.use(middleware);
+app.use(cors())
 setRoutes(app)
 
 app.use((req , res , next) => {

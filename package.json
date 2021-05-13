@@ -1,7 +1,6 @@
 {
   "name": "lekhapora_backend",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "nodemon node app.js",
@@ -12,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "connect-mongodb-session": "^2.4.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-graphql": "^0.12.0",
     "express-session": "^1.17.1",
@@ -22,5 +22,14 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lekhapora-Bangladesh/lekhapora_backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lekhapora-Bangladesh/lekhapora_backend/issues"
+  },
+  "homepage": "https://github.com/Lekhapora-Bangladesh/lekhapora_backend#readme",
+  "description": ""
 }
