@@ -1,4 +1,5 @@
 const authRoute = require('./authRoute')
+const db = require('../database')
 
 const routes = [
     {
@@ -7,7 +8,10 @@ const routes = [
     },
     {
         path: '/',
-        handler : (req , res) => {
+        handler : async(req , res) => {
+            const students = await db.query('SELECT * FROM `students`');
+            console.log(students)
+        
             res.json({ msg: 'All Good...'})
         }
     }
