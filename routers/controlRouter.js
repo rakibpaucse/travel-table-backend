@@ -1,10 +1,15 @@
 const authRoute = require('./authRoute')
+const orderRoute = require('./orderRoute')
 const db = require('../database')
 
 const routes = [
     {
         path : '/student',
         handler : authRoute
+    },
+    {
+        path : '/orders',
+        handler : orderRoute
     },
     {
         path: '/',
