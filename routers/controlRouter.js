@@ -1,22 +1,18 @@
-const authRoute = require('./authRoute')
-const orderRoute = require('./orderRoute')
-const db = require('../database')
+const studentRoute = require('./studentRoute')
+const teacherRoute = require('./teacherRoute')
 
 const routes = [
     {
         path : '/student',
-        handler : authRoute
+        handler : studentRoute
     },
     {
-        path : '/orders',
-        handler : orderRoute
+        path : '/teacher',
+        handler : teacherRoute
     },
     {
         path: '/',
-        handler : async(req , res) => {
-            const students = await db.query('SELECT * FROM `students`');
-            console.log(students)
-        
+        handler : (req , res) => { 
             res.json({ msg: 'All Good...'})
         }
     }
