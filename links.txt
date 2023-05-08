@@ -1,0 +1,13 @@
+City------
+## http://localhost:8081/city/cityById?objectID='xtk1PSBCP3ShMbfinksh'
+## http://localhost:8081/city/cityByName?city=Berlin
+## http://localhost:8081/city/compareCity?from=dhaka&to=Berlin
+## http://localhost:8081/city/allCities?page=84
+
+
+
+
+Country------
+## http://localhost:8081/country/countryByName?name=Albania
+## http://localhost:8081/country/countryById?objectID=Albania
+## http://localhost:8081/country/countryById?objectID=Albania

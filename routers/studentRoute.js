@@ -9,15 +9,16 @@ const {
     logoutController
 } = require('../controllers/authController')
 
-const {getProfileController,
+const {
+    getProfileController,
     getdashboardController,
     getEventController,
     getNotificationController
 } = require('../controllers/profileController')
 
 const { 
-    getPostController ,
-     getAssigmentsController ,
+      getPostController ,
+      getAssigmentsController ,
       getExamController,
       getLectureController,
       getNotificationControllerr

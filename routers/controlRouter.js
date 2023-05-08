@@ -1,20 +1,26 @@
-const studentRoute = require('./studentRoute')
-const teacherRoute = require('./teacherRoute')
+const cityRouter = require('./cityRouter')
+const countryRouter = require('./countryRouter')
+
+const saveDataInDataBase = require('./saveData')
+
 
 const routes = [
-    {
-        path : '/student',
-        handler : studentRoute
-    },
-    {
-        path : '/teacher',
-        handler : teacherRoute
-    },
+
     {
         path: '/',
-        handler : (req , res) => { 
-            res.json({ msg: 'All Good...'})
-        }
+        handler : (req , res) => { res.json({ msg: 'All Good...'})}
+    },
+    {
+        path: '/saveData',
+        handler : saveDataInDataBase
+    },
+    {
+        path: '/city',
+        handler : cityRouter
+    },
+    {
+        path: '/country',
+        handler : countryRouter
     }
 ]
 
