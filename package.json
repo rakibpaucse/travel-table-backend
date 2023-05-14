@@ -1,5 +1,5 @@
 {
-  "name": "lekhapora_backend",
+  "name": "travel_table_backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -26,8 +26,8 @@
     "url": "git+https://github.com/rakibpaucse/travel-table-backend.git"
   },
   "bugs": {
-    "url": "https://github.com/Lekhapora-Bangladesh/lekhapora_backend/issues"
+    "url": "https://github.com/rakibpaucse/travel-table-backend/issues"
   },
-  "homepage": "https://github.com/Lekhapora-Bangladesh/lekhapora_backend#readme",
+  "homepage": "https://github.com/rakibpaucse/travel-table-backend#readme",
   "description": ""
 }
